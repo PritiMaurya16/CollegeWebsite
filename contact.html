@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport content=" width=device-width, initial-scale=1.0">
+  <title>University Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="sub-header">
+
+    <nav>
+
+      <a href="index.html"><img src="images/logo.png" alt="university logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times-circle" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact </a></li>
+        </ul>
+
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+
+  </section>
+  <!--contact us-->
+  <section class="location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448738.98854583333!2d77.11793631324205!3d28.516466147449034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1623707342212!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+
+          <i class="fas fa-home"></i>
+          <span>
+            <h5>Noida Sector-51,Hoshiyarpur</h5>
+            <p>
+              Noida sector 37 ,Uttar Pradesh
+            </p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-phone"></i>
+          <span>
+            <h5>9335339076</h5>
+            <p>
+              Monday to saturday <br>10:00AM to 6:00PM
+            </p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <span>
+            <h5>Eduford@gmail.com</h5>
+            <p>
+              Email your query
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div class="contact-col">
+        <form action="form-handler.php" method="post">
+          <input type="text" name="name" placeholder="Enter Your Name" required>
+          <input type="email" name="email" placeholder="Enter Your Email" required>
+          <input type="text" name="subject" placeholder="Enter Your Subject" required>
+          <textarea rows="5"name="message" placeholder="Write your Message" required></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.<br> persona que se dedica a la imprenta)
+      desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+
+    </div>
+    <p> @copyright 2021 Priti Maurya</p>
+  </section>
+
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+  </script>
+
+</body>
+
+</html>
